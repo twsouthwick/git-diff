@@ -1,11 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'GitDiff'
+description: 'Performs a git diff on the current working directory to ensure no changes have occurred'
+author: 'Taylor Southwick'
 inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+  path:
+    required: false
+    description: 'Path to check for diff'
+    default: '.'
 runs:
   using: 'node16'
   main: 'dist/index.js'
